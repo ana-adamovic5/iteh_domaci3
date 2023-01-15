@@ -81,3 +81,9 @@
     font-size: 18px;
     margin-bottom: 20px;
 }
+
+@media screen and (max-width:600px) {
+    .banner {
+        height: 700px;
+    }
+}
