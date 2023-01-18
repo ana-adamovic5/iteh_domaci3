@@ -38,12 +38,28 @@
     <h1 class="text-center mt-3">customers <span class="highlight">favorites</span></h1>
     <div class="row">
         <div class="col-lg-3 mt-3" *ngFor="let fd of foodData; index as i">
-            <div class="foodbox" *ngIf="i<=3">
+            <div appSetBackground class="foodbox" *ngIf="i<=3">
                 <img src="{{fd.foodImg}}">
-                <h1>{{fd.foodName}}</h1>
+                <h1>{{fd.foodName | uppercase}}</h1>
                 <p>{{fd.foodPrice | currency:'RSD '}}</p>
             </div>
         </div>
     </div>
     <a routerLink="menu" class="viewmore">view more <i class="bi bi-arrow-right"></i></a>
+</div>
+
+<!-- about -->
+<div class="container mt-5 mb-5">
+    <h1 class="text-center">about <span class="highlight">us</span> </h1>
+    <div class="row mt-5">
+        <!-- one -->
+        <div class="foodbox col-lg-4 mt-2">
+            <img src="../../../assets/img/restaurant.jpg" alt="">
+        </div>
+        <!-- two -->
+        <div class="col-lg-8 mt-4">
+            <p> {{aboutText | shortText}} </p>
+            <a routerLink="about" class="viewmore">read more <i class="bi bi-arrow-right"></i></a>
+        </div>
+    </div>
 </div>
