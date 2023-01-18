@@ -6,7 +6,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class ShortTextPipe implements PipeTransform {
 
   transform(value: string, ...args: unknown[]): unknown {
-    return value.substring(0, 900) + ' ...';
+    return value.substring(0, 800) + ' ...';
   }
 
 }

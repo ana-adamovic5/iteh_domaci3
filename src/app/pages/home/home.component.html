@@ -1,33 +1,33 @@
 <div class="banner">
     <div class="content">
-        <h1 class="mb-3">Fresh Cooked Food <br> At Your Door</h1>
-        <a routerLink="menu">ORDER NOW <i class="bi bi-arrow-right"></i></a>
+        <h1 class="mb-3">Mesto gde jedete. <br> Gde otkrivate iskustva. <br> Gde uživate.</h1>
+        <a routerLink="menu">NARUČI <i class="bi bi-arrow-right"></i></a>
     </div>
 </div>
 
 <!-- steps -->
 <div class="container mt-5 mb-5">
-    <h1 class="text-center">how to get <span class="highlight">fresh food</span> </h1>
+    <h1 class="text-center">kako da naručite <span class="highlight">svežu hranu</span> </h1>
     <div class="row mt-5">
         <!-- one -->
         <div class="col-lg-4 mt-2">
             <div class="stepBox">
                 <h1>1</h1>
-            <p>select food</p>
+            <p>odaberite jelo</p>
             </div>
         </div>
         <!-- two -->
         <div class="col-lg-4 mt-2">
             <div class="stepBox">
                 <h1>2</h1>
-                <p>fill the details</p>
+                <p>popunite formu vašim podacima</p>
             </div>
         </div>
         <!-- three -->
         <div class="col-lg-4 mt-2">
             <div class="stepBox">
                 <h1>3</h1>
-                <p>order</p>
+                <p>naručite</p>
             </div>
         </div>
     </div>
@@ -35,7 +35,7 @@
 
 <!-- foodBox -->
 <div class="container mt-4 mb-4">
-    <h1 class="text-center mt-3">customers <span class="highlight">favorites</span></h1>
+    <h1 class="text-center mt-3"><span class="highlight">favoriti</span> naših gostiju</h1>
     <div class="row">
         <div class="col-lg-3 mt-3" *ngFor="let fd of foodData; index as i">
             <div appSetBackground class="foodbox" *ngIf="i<=3">
@@ -45,21 +45,21 @@
             </div>
         </div>
     </div>
-    <a routerLink="menu" class="viewmore">view more <i class="bi bi-arrow-right"></i></a>
+    <a routerLink="menu" class="viewmore">pogledaj meni <i class="bi bi-arrow-right"></i></a>
 </div>
 
 <!-- about -->
 <div class="container mt-5 mb-5">
-    <h1 class="text-center">about <span class="highlight">us</span> </h1>
+    <h1 class="text-center">o <span class="highlight">nama</span> </h1>
     <div class="row mt-5">
         <!-- one -->
         <div class="foodbox col-lg-4 mt-2">
             <img src="../../../assets/img/restaurant.jpg" alt="">
         </div>
         <!-- two -->
-        <div class="col-lg-8 mt-4">
+        <div class="col-lg-7 mt-4 text-center">
             <p> {{aboutText | shortText}} </p>
-            <a routerLink="about" class="viewmore">read more <i class="bi bi-arrow-right"></i></a>
+            <a routerLink="about" class="viewmore">procitaj više <i class="bi bi-arrow-right"></i></a>
         </div>
     </div>
 </div>
